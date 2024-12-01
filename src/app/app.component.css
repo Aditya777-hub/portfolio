@@ -1,52 +1,54 @@
 a {
     color: #E8ECD7;
-     gap: 30px;
-     margin: 30px;
-     text-decoration: none;
-     font-weight: 600;
-     font-family: 'Arial', sans-serif;
- }
- 
- a:hover {
-     color: rgb(10, 10, 10);
- }
- 
- .font {
+    gap: 30px;
+    margin: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+}
+
+a:hover {
+    color: rgb(10, 10, 10);
+}
+
+.font {
     font-family: "Sofia", sans-serif;
-     color: white;
-     position: absolute;
-     left: 20px;
-     font-size: 30px;
-     font-weight: bold;
-     color: white;
-     text-transform: uppercase;
-     letter-spacing: 5px;
-     text-shadow: 
-       2px 2px 5px rgba(0, 0, 0, 0.3),
-       -2px -2px 5px rgba(255, 255, 255, 0.2),
-       4px 4px 10px rgba(0, 0, 0, 0.5);
-     background: linear-gradient(90deg, #f3ec78, #97596a);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
- }
- 
- 
- .link-container {
-     text-align: right;
-     margin-top: 30px;
-     
- 
- }
+    color: white;
+    position: absolute;
+    left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow:
+        2px 2px 5px rgba(0, 0, 0, 0.3),
+        -2px -2px 5px rgba(255, 255, 255, 0.2),
+        4px 4px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(90deg, #f3ec78, #97596a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Ensure support for other browsers */
+}
 
 
- /* Responsive Styles */
+
+.link-container {
+    text-align: right;
+    margin-top: 30px;
+
+
+}
+
+
+/* Responsive Styles */
 
 /* For tablets (screens 600px to 900px) */
 @media (max-width: 900px) {
-    
 
-    .logo {
-        font-size: 24px; /* Adjust logo size */
+
+    .font {
+        font-size: 24px;
+        /* Adjust logo size */
         margin-bottom: 15px;
     }
 
@@ -54,13 +56,21 @@ a {
 
 /* For mobile devices (screens smaller than 600px) */
 @media (max-width: 600px) {
-    
 
-    .logo {
+
+    .font {
         font-size: 11px;
         margin-bottom: 20px;
         top: 7px;
         left: 10px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .font {
+       font-size: 4px;
     }
 
 }
