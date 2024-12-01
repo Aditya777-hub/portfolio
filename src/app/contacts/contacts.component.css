@@ -91,7 +91,7 @@ input[type="email"]::placeholder {
     color: rgb(12, 12, 12);
     font-size: 12px;
     margin-top: 5px;
-    background-color: #662755;
+    background-color: #1F4529;
 }
 
 .btn:disabled {
