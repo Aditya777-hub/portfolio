@@ -1,0 +1,52 @@
+<div class="form-box">
+    <label class="form-title">Contact Me</label>
+    <form  #contactForm="ngForm" class="nn">
+        <label>Name:</label>
+        <input 
+            type="text" 
+            placeholder="Enter your name" 
+            [(ngModel)]="signobj.Name" 
+            name="Name" 
+            required 
+            #name="ngModel">
+        <div *ngIf="name.invalid && name.touched" class="error">
+            Name is required.
+        </div>
+
+        <br>
+
+        <label>Email:</label>
+        <input 
+            type="email" 
+            placeholder="Enter your email" 
+            [(ngModel)]="signobj.Email" 
+            name="Email" 
+            required 
+            email 
+            #email="ngModel">
+        <div *ngIf="email.invalid && email.touched" class="error">
+            Please enter a valid email address.
+        </div>
+
+        <br>
+
+        <label>Message:</label>
+        <input 
+            type="text" 
+            placeholder="Enter your message" 
+            [(ngModel)]="signobj.Message" 
+            name="Message" 
+            required 
+            #message="ngModel">
+       
+
+        <br>
+
+        <button 
+            class="btn" 
+            (click)="SignUp()" 
+            [disabled]="contactForm.invalid">
+            Submit
+        </button>
+    </form>
+</div>

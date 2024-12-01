@@ -1,0 +1,130 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    
+    border-radius: 10px;
+    
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.heading {
+    display: block;
+    font-size: 70px;
+    font-weight: 600;
+    color: #E8ECD7;
+    margin-bottom: -34px;
+    text-align: center;
+}
+
+
+.sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #EED3B1;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.description {
+    display: block;
+    font-size: 16px;
+    color: #292626;
+    text-align: justify;
+    font-family: Cinzel, serif;
+}
+
+.container span {
+    display: block;
+}
+
+
+.skills-container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 20px auto;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    
+  }
+
+  .skills-container h2 {
+    text-align: center;
+    color: #EED3B1;
+    margin-bottom: 10px;
+  }
+
+  .skills-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skills-container li {
+    padding: 5px 0;
+   text-align: center;
+    color: #292626;
+    font-family: Cinzel, serif;
+    
+  }
+
+  .skills-container li:last-child {
+    border-bottom: none;
+  }
+
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 90%; /* Slightly wider on smaller screens */
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 50px; /* Reduce heading size */
+    }
+
+    .sub {
+        font-size: 16px; /* Slightly smaller subheading */
+    }
+
+    .description {
+        font-size: 14px; /* Adjust description for readability */
+    }
+}
+
+/* For mobile devices (screens smaller than 600px) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+        padding: 4px;
+        margin-left: 34px;
+    }
+
+    .heading {
+        font-size: 40px; /* Smaller heading for mobile */
+        margin-bottom: -20px; /* Adjust spacing */
+    }
+
+    .sub {
+        font-size: 14px; /* Smaller subheading */
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+
+    .description {
+        font-size: 12px; /* Reduce font size for better fit */
+        line-height: 1.4; /* Adjust line height */
+    }
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        margin-left: 74px;
+        font-size: 10px;
+    }
+
+}
