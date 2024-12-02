@@ -164,7 +164,7 @@ input[type="email"]::placeholder {
 @media (max-width: 375px) {
    
     .form-box {
-       margin-left: 20px;
+       margin-left: 2px;
     }
   
   

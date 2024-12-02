@@ -5,10 +5,12 @@ a {
     text-decoration: none;
     font-weight: 600;
     font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 a:hover {
     color: rgb(10, 10, 10);
+    transform: translateY(-5px);
 }
 
 .font {
@@ -71,6 +73,11 @@ a:hover {
 
     .font {
        font-size: 9px;
+    }
+      
+    a{
+        margin: 20px;
+        font-size: 19px;
     }
 
 }

@@ -123,8 +123,13 @@
 @media (max-width: 375px) {
 
     .container {
-        margin-left: 74px;
+        margin-left: 47px;
         font-size: 10px;
+    }
+
+    .skills-container{
+        width: 363px;
+        font-size: 13px;
     }
 
 }
