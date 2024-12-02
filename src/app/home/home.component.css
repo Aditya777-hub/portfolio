@@ -98,12 +98,12 @@
 @media (max-width: 375px) {
 
   .home-container {
-    margin-left: 54px;
+    margin-left: 49px;
   }
 
   .img-container {
     position: absolute;
-    bottom: -90px;
+    bottom: -60px;
   }
 
   .home-container h1 {
